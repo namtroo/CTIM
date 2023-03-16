@@ -2,13 +2,15 @@
 
 ## Features
 
-[  ] Modern UI with PyQt
-[  ] Support Windows, Linux, MacOS
-[  ] Show full information of system
-[  ] Text file config
-[  ] History human-readable file format
-[  ] Live update on screen
+- [ ] Modern UI with PyQt
+- [ ] Support Windows, Linux, MacOS
+- [ ] Show full information of system
+- [ ] Text file config
+- [ ] History human-readable file format
+- [ ] Live update on screen
+- [ ] Report export (txt, html, pdf)
+- [ ] Support remote Rest API sending request
 
-## Contributor
+## Contributors
 
 - Nguyen Viet Hoang (BI11-099)
