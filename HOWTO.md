@@ -23,7 +23,7 @@ git push -u origin <your-new-branch>
 git remote add upstream git@github.com:doclai/CTIM.git
 ```
 
-- **BEFORE** making any new change to the repository, you need to sync your local version with upstream version.
+- From next time, **BEFORE** making any new change to the repository, you need to sync your local version with upstream version (**NEXT TIME: DO THIS FIRST**).
 
 ```
 git pull upstream main
