@@ -15,14 +15,12 @@ git switch -c <your-new_branch>
 
 ```
 git push -u origin <your-new-branch>
-
 ```
 
-- Remember to add
+- Remember to add the upstream repo for contribution.
 
 ```
 git remote add upstream git@github.com:doclai/CTIM.git
-
 ```
 
 - **BEFORE** making any new change to the repository, you need to sync your local version with upstream version.
