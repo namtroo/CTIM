@@ -14,3 +14,4 @@
 ## Contributors
 
 - Nguyen Viet Hoang (BI11-099)
+- Chu Van Nam (BA11-076)
