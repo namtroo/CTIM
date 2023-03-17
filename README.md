@@ -16,3 +16,4 @@
 - Nguyen Viet Hoang (BI11-099)
 - Chu Van Nam (BA11-076)
 - Nguyen Quang Vinh (BA11-103)
+- Dang Duc Anh (BA11-002)
