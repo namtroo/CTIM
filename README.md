@@ -2,14 +2,12 @@
 
 ## Features
 
-- [ ] Modern UI with PyQt
 - [ ] Support Windows, Linux, MacOS
-- [ ] Show full information of system
 - [ ] Text file config
-- [ ] History human-readable file format
-- [ ] Live update on screen
-- [ ] Report export (txt, html, pdf)
-- [ ] Support remote Rest API sending request
+- [ ] SQLite3 history
+- [ ] Report export (csv, html, image, pdf)
+- [ ] Support remote node management
+- [ ] Support Telegram notification
 
 ## Contributors
 
