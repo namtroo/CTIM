@@ -2,6 +2,7 @@
 
 ## Features
 
+- [ ] Live update web interface (headless vs web mode)
 - [ ] Support Windows, Linux, MacOS
 - [ ] Text file config
 - [ ] SQLite3 history
