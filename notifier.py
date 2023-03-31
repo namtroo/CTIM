@@ -3,6 +3,7 @@
 import telegram
 import subprocess
 import asyncio
+from config import token, chat_id
 
 class Notifier:
     def __init__(self, token, chat_id):
@@ -14,11 +15,10 @@ class Notifier:
         message = subprocess.check_output(['python', 'config.py'])
         message_str = message.decode()
         await self.bot.send_message(chat_id=self.chat_id, text=message_str)
-    
-if __name__ == "__main__":
-    # Set up the bot and chat_id
-    # My group use to test
-    bot_token = '5778730071:AAHU3Ti-FCSnY4KqcIsqYrIUrgitMOb0kVw'
-    chat_id = '-1001714864670'
-    telegram_bot = Notifier(token=bot_token, chat_id=chat_id)
-    asyncio.run(telegram_bot.send_notification())
+
+    def set_bot(self, bot_token, chat_id):    
+        # Set up the bot and chat_id
+        self.token = bot_token
+        self.chat_id = chat_id
+        telegram_bot = Notifier(token=self.token, chat_id=self.chat_id)
+        asyncio.run(telegram_bot.send_notification())
