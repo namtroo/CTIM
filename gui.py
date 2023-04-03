@@ -75,6 +75,14 @@ class GUI:
         self.cpu_temps.append(self.cpu_temp)
         self.gpu_temps.append(self.gpu_temp)
         self.hdd_temps.append(self.hdd_temp)
+        
+        # Delete the first element if the list have more than 40 elements
+        if (len(self.cpu_temps) > 40):
+            self.cpu_temps.pop(0)
+        if (len(self.gpu_temps) > 40):
+            self.gpu_temps.pop(0)
+        if (len(self.hdd_temps) > 40):
+            self.hdd_temps.pop(0)
 
         # Clear the graph and plot the new temperature data
         self.ax.clear()
@@ -83,8 +91,8 @@ class GUI:
         self.ax.plot(self.hdd_temps, label="HDD")
 
         # Add title and labels to the graph
-        self.ax.set_title("Temperature Graph")
-        self.ax.set_xlabel("Time (s)")
+        self.ax.set_title("Computer Temperature Graph")
+        self.ax.get_xaxis().set_visible(False)
         self.ax.set_ylabel("Temperature (°C)")
         self.ax.legend()
 
