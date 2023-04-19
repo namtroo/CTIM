@@ -1,1 +1,7 @@
 step.md
+*.db
+*.csv
+input.css
+output.css
+tailwind.config.js
+__pycache__

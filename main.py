@@ -6,7 +6,7 @@ import exporter
 import writer
 import time
 
-from flask import Flask, render_template, make_response
+from flask import Flask, render_template, make_response, send_file
 from flask_cors import CORS
 from threading import Thread
 
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     @app.route("/export", methods=["GET"])
     def main_export():
         new_exporter.write_csv()
-        return
+        return send_file("sensors_history.csv", as_attachment=True)
 
     # app.jinja_env.auto_reload = True
     # app.config['TEMPLATES_AUTO_RELOAD'] = True

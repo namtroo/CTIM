@@ -54,5 +54,5 @@ function update_temp() {
 
 update_specs();
 update_temp();
-setInterval(update_specs, 60*1000);
+setInterval(update_specs, interval*1000);
 setInterval(update_temp, interval*1000);
