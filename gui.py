@@ -9,7 +9,7 @@ import threading
 import random
 
 class GUI:
-    def __init__(self):
+    def __init__(self, ):
         # Create the main window
         self.window = tk.Tk()
         self.window.title("Computer Temperature Information Management System")
@@ -36,10 +36,16 @@ class GUI:
         gpu_temp_label.grid(column=1, row=1, padx=5, pady=5, sticky=tk.E)
         hdd_temp_label.grid(column=1, row=2, padx=5, pady=5, sticky=tk.E)
 
+        # TODO: dropdown choose branches
+
+        # TODO: make requests to branches
+
         # Initialize temperature values and history lists
         self.cpu_temp = random.randint(30, 90)
         self.gpu_temp = random.randint(30, 90)              # sua lai cho nay lay vao temp
         self.hdd_temp = random.randint(30, 90)
+        
+        
         self.cpu_temps = []
         self.gpu_temps = []
         self.hdd_temps = []
